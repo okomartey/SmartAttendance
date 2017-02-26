@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="default.aspx" title="Home Page"  description="">
+    <siteMapNode url="searchstudents.aspx" title="Search Student"  description="Search Student" />
+    <siteMapNode url="changepassword.aspx" title="Change Password"  description="" />
+    <siteMapNode url="oldattendance.aspx" title="Old Attendance"  description="" />
+    <siteMapNode url="faculties.aspx" title="Faculties List"  description="" />
+    <siteMapNode url="AddFaculty.aspx" title="Create New Faculty"  description="" />
+    </siteMapNode>
+</siteMap>
