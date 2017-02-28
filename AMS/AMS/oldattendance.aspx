@@ -13,13 +13,13 @@
         <Columns>
             <asp:CommandField ShowEditButton="True" />
             <asp:BoundField DataField="admno" HeaderText="admno" SortExpression="admno" ReadOnly="True" />
-            <asp:BoundField DataField="sname" HeaderText="sname" SortExpression="sname" ReadOnly="True" />
+            <asp:BoundField DataField="Surname" HeaderText="sname" SortExpression="sname" ReadOnly="True" />
             <asp:BoundField DataField="status" HeaderText="status" SortExpression="status" />
             <asp:BoundField DataField="remarks" HeaderText="remarks" SortExpression="remarks" />
         </Columns>
     </asp:GridView>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:AttendanceConnectionString %>"
-        SelectCommand="select  a.admno, sname, status , remarks from attendance a, students s&#13;&#10;where  period = @period and fcode = @fcode and  adate = @adate and s.admno  = a.admno&#13;&#10;order by sname"
+        SelectCommand="select  a.admno, Surname, status , remarks from attendance a, students s&#13;&#10;where  period = @period and fcode = @fcode and  adate = @adate and s.admno  = a.admno&#13;&#10;order by Surname"
         UpdateCommand="update  attendance set  status = @status ,  remarks  = @remarks &#13;&#10;where  adate = @adate  and  admno = @admno and period = @period">
         <SelectParameters>
             <asp:ControlParameter ControlID="TextBox2" Name="period" PropertyName="Text" />

@@ -39,6 +39,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -57,13 +58,21 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AddFaculty.aspx" />
+    <Content Include="AddNewStaff.aspx" />
+    <Content Include="AddNewStudent.aspx" />
+    <Content Include="AddSubjects.aspx" />
+    <Content Include="App_Data\US passport pic.jpg" />
     <Content Include="attendance.aspx" />
     <Content Include="changepassword.aspx" />
     <Content Include="faculties.aspx" />
     <Content Include="login.aspx" />
     <Content Include="App_Themes\all\SkinFile.skin" />
     <Content Include="MasterPage.master" />
+    <Content Include="DataAccess\AttandanceContext.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>AttandanceContext.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -71,6 +80,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <Content Include="searchstudents.aspx" />
+    <Content Include="Staff.aspx" />
+    <Content Include="Students.aspx" />
+    <Content Include="Subjects.aspx" />
     <Content Include="Web.sitemap">
       <SubType>Designer</SubType>
     </Content>
@@ -88,12 +100,31 @@
   <ItemGroup>
     <Content Include="App_Code\Database.cs" />
     <Content Include="App_Code\FacultyDAL.cs" />
-    <Compile Include="AddFaculty.aspx.cs">
-      <DependentUpon>AddFaculty.aspx</DependentUpon>
+    <Compile Include="AddNewStaff.aspx.cs">
+      <DependentUpon>AddNewStaff.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddFaculty.aspx.designer.cs">
-      <DependentUpon>AddFaculty.aspx</DependentUpon>
+    <Compile Include="AddNewStaff.aspx.designer.cs">
+      <DependentUpon>AddNewStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewStudent.aspx.cs">
+      <DependentUpon>AddNewStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddNewStudent.aspx.designer.cs">
+      <DependentUpon>AddNewStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddSubjects.aspx.cs">
+      <DependentUpon>AddSubjects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddSubjects.aspx.designer.cs">
+      <DependentUpon>AddSubjects.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\AttandanceContext.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AttandanceContext.dbml</DependentUpon>
     </Compile>
     <Compile Include="attendance.aspx.cs">
       <DependentUpon>attendance.aspx</DependentUpon>
@@ -109,6 +140,7 @@
     <Compile Include="changepassword.aspx.designer.cs">
       <DependentUpon>changepassword.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DataAccess\SubjectManager.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -152,12 +184,33 @@
     <Compile Include="searchstudents.aspx.designer.cs">
       <DependentUpon>searchstudents.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Staff.aspx.cs">
+      <DependentUpon>Staff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Staff.aspx.designer.cs">
+      <DependentUpon>Staff.aspx</DependentUpon>
+    </Compile>
     <Compile Include="studentattendance.aspx.cs">
       <DependentUpon>studentattendance.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="studentattendance.aspx.designer.cs">
       <DependentUpon>studentattendance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Students.aspx.cs">
+      <DependentUpon>Students.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Students.aspx.designer.cs">
+      <DependentUpon>Students.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Subjects.aspx.cs">
+      <DependentUpon>Subjects.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Subjects.aspx.designer.cs">
+      <DependentUpon>Subjects.aspx</DependentUpon>
     </Compile>
     <Compile Include="test.aspx.cs">
       <DependentUpon>test.aspx</DependentUpon>
@@ -168,7 +221,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataAccess\AttandanceContext.dbml.layout">
+      <DependentUpon>AttandanceContext.dbml</DependentUpon>
+    </None>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

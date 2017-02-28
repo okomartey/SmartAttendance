@@ -1,0 +1,27 @@
+﻿body
+{
+    font-size: 10pt;
+    margin: 0px;
+    font-family: verdana;
+}
+.topicheading
+{
+    font-weight: bold;
+    font-size: 16pt;
+    color: red;
+    font-family: Arial;
+}
+a
+{
+    font-weight: bold;
+    font-size: 10pt;
+    font-family: verdana;
+}
+.borderlabel
+{
+    font-weight: bold;
+    font-size: 12pt;
+    color: #ffffff;
+    font-family: verdana;
+    background-color: navy;
+}

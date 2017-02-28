@@ -5,6 +5,8 @@
     <siteMapNode url="changepassword.aspx" title="Change Password"  description="" />
     <siteMapNode url="oldattendance.aspx" title="Old Attendance"  description="" />
     <siteMapNode url="faculties.aspx" title="Faculties List"  description="" />
-    <siteMapNode url="AddFaculty.aspx" title="Create New Faculty"  description="" />
+    <siteMapNode url="Students.aspx" title="Students"  description="" />
+    <siteMapNode url="Staff.aspx" title="Staff"  description="" />
+    <siteMapNode url="Subjects.aspx" title="Subjects"  description="" />
     </siteMapNode>
 </siteMap>

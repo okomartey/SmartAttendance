@@ -3,4 +3,3 @@ C:\Users\smartey\documents\visual studio 2013\Projects\AMS\AMS\bin\AMS.dll
 C:\Users\smartey\documents\visual studio 2013\Projects\AMS\AMS\bin\AMS.pdb
 C:\Users\smartey\documents\visual studio 2013\Projects\AMS\AMS\obj\Debug\AMS.dll
 C:\Users\smartey\documents\visual studio 2013\Projects\AMS\AMS\obj\Debug\AMS.pdb
-C:\Users\smartey\documents\visual studio 2013\Projects\AMS\AMS\obj\Debug\AMS.csprojResolveAssemblyReference.cache

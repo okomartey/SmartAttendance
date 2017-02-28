@@ -13,7 +13,7 @@
         <EmptyDataRowStyle BackColor="#FFC0C0" Font-Bold="True" />
         <Columns>
             <asp:BoundField DataField="admno" HeaderText="Admno" ReadOnly="True" SortExpression="admno" />
-            <asp:BoundField DataField="sname" HeaderText="Name" SortExpression="sname" />
+            <asp:BoundField DataField="Surname" HeaderText="Name" SortExpression="sname" />
             <asp:BoundField DataField="course" HeaderText="Course" SortExpression="course" />
             <asp:BoundField DataField="semno" HeaderText="Sem No." SortExpression="semno" />
             <asp:HyperLinkField DataNavigateUrlFields="admno" DataNavigateUrlFormatString="studentattendance.aspx?admno={0}"
@@ -23,7 +23,7 @@
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:AttendanceConnectionString %>"
         SelectCommand="GetStudents" SelectCommandType="StoredProcedure">
         <SelectParameters>
-            <asp:ControlParameter ControlID="txtName" Name="name" PropertyName="Text" Type="String" />
+            <asp:ControlParameter ControlID="txtName" Name="fname" PropertyName="Text" Type="String" />
         </SelectParameters>
     </asp:SqlDataSource>
 </asp:Content>
