@@ -25,7 +25,7 @@
                <asp:BoundField DataField="admno" HeaderText="admno" ReadOnly="True" SortExpression="admno" >
                    <ItemStyle HorizontalAlign="Center" />
                </asp:BoundField>
-               <asp:BoundField DataField="sname" HeaderText="sname" SortExpression="sname" >
+               <asp:BoundField DataField="Surname" HeaderText="Surname" SortExpression="Surname" >
                    <ItemStyle HorizontalAlign="Center" />
                </asp:BoundField>
                <asp:TemplateField HeaderText="Attendance">
@@ -51,7 +51,7 @@
        <asp:Label ID="lblMsg" runat="server"></asp:Label><br />
        <br />
        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:AttendanceConnectionString %>"
-           SelectCommand="select  admno, sname from students&#13;&#10;where   bcode = &#13;&#10;     ( select  bcode from schedule where weekno= @weekno and  period = @period and  &#13;&#10;             fcode = @fcode)&#13;&#10;order by sname">
+           SelectCommand="select  admno, Surname from students&#13;&#10;where   bcode = &#13;&#10;     ( select  bcode from schedule where weekno= @weekno and  period = @period and  &#13;&#10;             fcode = @fcode)&#13;&#10;order by Surname">
            <SelectParameters>
                <asp:QueryStringParameter Name="weekno" QueryStringField="weekno" />
                <asp:QueryStringParameter Name="period" QueryStringField="period" />
