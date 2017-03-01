@@ -12,7 +12,7 @@ namespace AMS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            SubjectGrid.DataSource = SubjectManager.GetAllSubjects();
+            SubjectGrid.DataSource = Manager.GetAllSubjects();
             SubjectGrid.DataBind();
         }
 

@@ -11,68 +11,83 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using System.IO;
+using DA = AMS.DataAccess;
 
 namespace AMS
 {
     public partial class AddNewStudent : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+            protected void Page_Load(object sender, EventArgs e)
         {
-            if (!Page.IsPostBack)
-                GridView1.Visible = false;
+           if (!IsPostBack)
+            {
+                string StudentId = Request.QueryString["StudentId"];
+
+                if (string.IsNullOrEmpty(StudentId))
+                {
+                    //Add new subject
+                    
+                    //LoadStaffGrid(0);
+                }
+                else
+                {
+                    //Load existing subject details
+                    int id = 0;
+                    int.TryParse(StudentId, out id);
+                    if (id > 0)
+                    {
+                        StudentIdHiddenField.Value = StudentId;
+
+                        LoadStudentById(id);
+                        SlblMsg.Text = " New Student wasnt created successfully";
+                        //LoadDateGrid(id);
+                    }
+                    else
+                    {
+                        throw new InvalidOperationException("Staff Id couldn't recognize.");
+                    }
+                }
+           }
+        }
+
+        protected void AddStudent_Click(object sender, EventArgs e)
+
+        {
+             int studentId = 0;
+            int.TryParse(StudentIdHiddenField.Value, out studentId);
+
+            DA.student student = new DataAccess.student();
+            student.fname = FnameBox.Text;
+            student.Surname = SnameBox.Text;
+            student.bcode =Int32.Parse(SemBox.Text);
+          
+
+            if (studentId > 0)
+            {
+                student.admno = studentId;
+
+                DA.Manager.UpdateStudent(student);
+            }
             else
-                GridView1.Visible = true;
+            {
+                DA.Manager.InsertStudent(student);
+            }
+
+            //After insert, redirect to update page
+            Response.Redirect(String.Format("AddNewStudent.aspx?StudentId={0}", student.admno));
+
         }
 
-        protected void btnSearch_Click(object sender, EventArgs e)
+
+
+        private void LoadStudentById(int id)
         {
-            string qry = StudentCreate.AddNewStudent(FnameBox.Text,SnameBox.Text,SemBox.Text);
-            if (qry == null)
-                SlblMsg.Text = "You have successfully created a new Student";
-            else
-            {
-                SlblMsg.Text = "Sorry! New Facility wasnt created";
-            }
+            var student = DA.Manager.GetStudentById(id);
+            FnameBox.Text = student.fname;
+            SnameBox.Text = student.Surname;
+            SemBox.Text = Convert.ToString(student.bcode);
         }
 
-        public class StudentCreate
-        {
-            public static string AddNewStudent(string fname, string sname,string semester)
-            {
-                SqlConnection con = new SqlConnection(Database.ConnectionString);
-                try
-                {
-                    con.Open();
-                    SqlCommand cmd = new SqlCommand("Insert into students(fname,Surname,bcode) values (@fname,@Surname,@bcode)", con);
-                    cmd.Parameters.Add("@fname", SqlDbType.VarChar).Value = fname;
-                    cmd.Parameters.Add("@Surname", SqlDbType.VarChar).Value = sname;
-                    cmd.Parameters.Add("@bcode", SqlDbType.VarChar).Value = semester;
-                    int rows = cmd.ExecuteNonQuery(); ;
-                    return null;
-
-                }
-                catch (Exception ex)
-                {
-                    return null;
-                }
-                finally
-                {
-                    if (con.State == ConnectionState.Open)
-                        con.Close();
-                }
-            }
-            //  returns null on sccess, error message on failure
-        }
-
-        public class Database
-        {
-            public static string ConnectionString
-            {
-                get
-                {
-                    return WebConfigurationManager.ConnectionStrings["AttendanceConnectionString"].ConnectionString;
-                }
-            }
         }
 
         //protected void InsertImage_Click(object sender, EventArgs e)
@@ -173,4 +188,3 @@ namespace AMS
         //    Response.End();
         //}
     }
-}

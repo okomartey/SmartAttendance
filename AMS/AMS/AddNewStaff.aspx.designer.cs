@@ -13,6 +13,15 @@ namespace AMS {
     public partial class AddNewStaff {
         
         /// <summary>
+        /// StaffIdHiddenField control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField StaffIdHiddenField;
+        
+        /// <summary>
         /// SFnameBox control.
         /// </summary>
         /// <remarks>

@@ -3,6 +3,8 @@
     <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <h2>
         Add New Staff</h2>
+         <asp:HiddenField ID="StaffIdHiddenField" runat="server" />
+
      Enter Staff First Name :
     <asp:TextBox ID="SFnameBox" runat="server"></asp:TextBox>
     <br />
@@ -21,10 +23,11 @@
    
    
 
-    <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSearch_Click" /><br />
+    <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="Addstaff_Click" /><br />
     <br />
      <asp:Label ID="SlblMsg" runat="server" Font-Bold="True" ForeColor="#CC0066"></asp:Label>
-    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False"
+
+  <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False"
         DataKeyNames="fcode" DataSourceID="SqlDataSource1" EmptyDataText="Sorry! No Student's Name Matched The Given Name."
         Width="100%">
         <EmptyDataRowStyle BackColor="#FFC0C0" Font-Bold="True" />
@@ -49,4 +52,3 @@
         </SelectParameters>
     </asp:SqlDataSource>
 </asp:Content>
-

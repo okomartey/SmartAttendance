@@ -121,11 +121,6 @@
     <Compile Include="AddSubjects.aspx.designer.cs">
       <DependentUpon>AddSubjects.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DataAccess\AttandanceContext.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AttandanceContext.dbml</DependentUpon>
-    </Compile>
     <Compile Include="attendance.aspx.cs">
       <DependentUpon>attendance.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -140,7 +135,12 @@
     <Compile Include="changepassword.aspx.designer.cs">
       <DependentUpon>changepassword.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DataAccess\SubjectManager.cs" />
+    <Compile Include="DataAccess\AttandanceContext.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AttandanceContext.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Manager.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -223,6 +223,7 @@
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="DataAccess\AttandanceContext.dbml.layout">
       <DependentUpon>AttandanceContext.dbml</DependentUpon>

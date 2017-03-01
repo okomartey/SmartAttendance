@@ -3,6 +3,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <h2>
         Add New Student</h2>
+
+     <asp:HiddenField ID="StudentIdHiddenField" runat="server" />
      Enter Student First Name :
     <asp:TextBox ID="FnameBox" runat="server"></asp:TextBox>
     <br />
@@ -14,7 +16,7 @@
     <br />
    
 
-    <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSearch_Click" /><br />
+    <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="AddStudent_Click" /><br />
     <br />
      <asp:Label ID="SlblMsg" runat="server" Font-Bold="True" ForeColor="#CC0066"></asp:Label>
     <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False"
