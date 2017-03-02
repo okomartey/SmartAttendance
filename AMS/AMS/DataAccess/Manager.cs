@@ -39,6 +39,21 @@ namespace AMS.DataAccess
             }
         }
 
+     
+        public static void UpdateLogin(faculty obj)
+        {
+            using (AttandanceContextDataContext context = new AttandanceContextDataContext())
+            {
+                var login = context.faculties.SingleOrDefault(x => x.admno == obj.admno);
+                if (login != null)
+                {
+                    login.fcode = obj.fcode;
+                    login.pwd = obj.pwd;
+                    context.SubmitChanges();
+                }
+            }
+        }
+
         public static void UpdateStaff(faculty staff)
         {
             using (AttandanceContextDataContext context = new AttandanceContextDataContext())

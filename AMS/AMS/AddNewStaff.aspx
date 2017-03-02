@@ -28,8 +28,7 @@
      <asp:Label ID="SlblMsg" runat="server" Font-Bold="True" ForeColor="#CC0066"></asp:Label>
 
   <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False"
-        DataKeyNames="fcode" DataSourceID="SqlDataSource1" EmptyDataText="Sorry! No Student's Name Matched The Given Name."
-        Width="100%">
+        DataKeyNames="fcode" DataSourceID="SqlDataSource1" Width="100%">
         <EmptyDataRowStyle BackColor="#FFC0C0" Font-Bold="True" />
         <Columns>
             <asp:BoundField DataField="admno" HeaderText="Id" ReadOnly="True" SortExpression="admno" />
