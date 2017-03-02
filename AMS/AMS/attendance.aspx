@@ -4,6 +4,7 @@
     <h2>
         Attendance
     </h2>
+    <asp:HiddenField ID="AttendIdHiddenField" runat="server" />
     <asp:Panel ID="Panel1" runat="server" GroupingText="Attendance Header" Width="100%"> 
         Today :
         <asp:Label ID="lblToday" runat="server" CssClass="borderlabel"></asp:Label>
@@ -48,7 +49,7 @@
        <br />
        <asp:Button ID="btnSubmit" runat="server" Text="Submit" Width="131px" OnClick="btnSubmit_Click" /><br />
        <br />
-       <asp:Label ID="lblMsg" runat="server"></asp:Label><br />
+       <asp:Label ID="lblMsg" runat="server" Font-Bold="True" ForeColor="#CC0066"></asp:Label><br />
        <br />
        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:AttendanceConnectionString %>"
            SelectCommand="select  admno, Surname from students&#13;&#10;where   bcode = &#13;&#10;     ( select  bcode from schedule where weekno= @weekno and  period = @period and  &#13;&#10;             fcode = @fcode)&#13;&#10;order by Surname">

@@ -3,6 +3,7 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <h2> Change Password</h2>
+    <asp:HiddenField ID="ChangePwdIdHiddenField" runat="server" />
     <table>
         <tr>
             <td>

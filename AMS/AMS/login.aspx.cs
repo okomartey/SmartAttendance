@@ -19,10 +19,7 @@ namespace AMS
 {
     public partial class login : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
+      
         protected void btnLogin_Click(object sender, EventArgs e)
         {
 
@@ -59,16 +56,7 @@ namespace AMS
             
         }
 
-        public class Database
-        {
-            public static string ConnectionString
-            {
-                get
-                {
-                    return WebConfigurationManager.ConnectionStrings["AttendanceConnectionString"].ConnectionString;
-                }
-            }
-        }
+
         
 
         

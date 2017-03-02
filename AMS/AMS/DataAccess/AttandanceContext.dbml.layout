@@ -2,22 +2,28 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="AttandanceContext">
   <DataContextMoniker Name="/AttandanceContextDataContext" />
   <nestedChildShapes>
-    <classShape Id="636228e8-2897-4fb8-9ef0-7b9c4f66e3fa" absoluteBounds="6.5, 1.875, 2, 1.1939925130208333">
-      <DataClassMoniker Name="/AttandanceContextDataContext/subject" />
-      <nestedChildShapes>
-        <elementListCompartment Id="44950152-11c4-4fdb-bd67-600031af6986" absoluteBounds="6.515, 2.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="4325310a-c107-4690-9194-c425d8a05d1e" absoluteBounds="1.75, 1.375, 2, 1.9631982421875">
-      <DataClassMoniker Name="/AttandanceContextDataContext/faculty" />
-      <nestedChildShapes>
-        <elementListCompartment Id="71459e7a-1435-4454-9426-a43bbcde3b1e" absoluteBounds="1.7650000000000001, 1.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="bd815a5f-0cd7-4c0a-9f1b-a3c6f3b3ddb8" absoluteBounds="5.125, 3.5, 2, 1.5785953776041666">
+    <classShape Id="bd815a5f-0cd7-4c0a-9f1b-a3c6f3b3ddb8" absoluteBounds="6.125, 4.25, 2, 1.5785953776041666">
       <DataClassMoniker Name="/AttandanceContextDataContext/student" />
       <nestedChildShapes>
-        <elementListCompartment Id="a5f83668-edee-48a7-a872-c74373c31620" absoluteBounds="5.14, 3.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="a5f83668-edee-48a7-a872-c74373c31620" absoluteBounds="6.14, 4.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7d086607-196e-421e-9c74-0e12a49c6ae3" absoluteBounds="1.875, 3.625, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/AttandanceContextDataContext/attendance" />
+      <nestedChildShapes>
+        <elementListCompartment Id="331e06df-f8a9-42c5-bc9b-2937a4a86c4e" absoluteBounds="1.8900000000000001, 4.085, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="279a6640-63a9-469a-9010-88007d607571" absoluteBounds="1.25, 1, 2, 1.9631982421875">
+      <DataClassMoniker Name="/AttandanceContextDataContext/faculty" />
+      <nestedChildShapes>
+        <elementListCompartment Id="61c3f091-6b48-4bcc-a5b4-1bbe457716dd" absoluteBounds="1.2650000000000001, 1.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3db4d308-4ca5-4412-b240-9f16606bd817" absoluteBounds="5.625, 1.125, 2, 1.3862939453125">
+      <DataClassMoniker Name="/AttandanceContextDataContext/subject" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1eafd46f-d19c-417e-9ad4-61744cdccf5f" absoluteBounds="5.64, 1.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

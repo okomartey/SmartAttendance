@@ -1,0 +1,5 @@
+C:\Users\smartey\documents\visual studio 2013\Projects\AMS\AMS\bin\AMS.dll.config
+C:\Users\smartey\documents\visual studio 2013\Projects\AMS\AMS\bin\AMS.dll
+C:\Users\smartey\documents\visual studio 2013\Projects\AMS\AMS\bin\AMS.pdb
+C:\Users\smartey\documents\visual studio 2013\Projects\AMS\AMS\obj\Release\AMS.dll
+C:\Users\smartey\documents\visual studio 2013\Projects\AMS\AMS\obj\Release\AMS.pdb

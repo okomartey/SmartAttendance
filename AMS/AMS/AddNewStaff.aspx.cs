@@ -19,14 +19,14 @@ namespace AMS
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           if (!IsPostBack)
+            if (!IsPostBack)
             {
                 string staffId = Request.QueryString["StaffId"];
 
                 if (string.IsNullOrEmpty(staffId))
                 {
                     //Add new subject
-                    
+
                     //LoadStaffGrid(0);
                 }
                 else
@@ -47,13 +47,12 @@ namespace AMS
                         throw new InvalidOperationException("Staff Id couldn't recognize.");
                     }
                 }
-           }
+            }
         }
 
         protected void Addstaff_Click(object sender, EventArgs e)
-
         {
-             int staffId = 0;
+            int staffId = 0;
             int.TryParse(StaffIdHiddenField.Value, out staffId);
 
             DA.faculty staff = new DataAccess.faculty();
@@ -79,7 +78,7 @@ namespace AMS
 
         }
 
-        
+
 
         private void LoadStaffById(int id)
         {
@@ -89,33 +88,10 @@ namespace AMS
             DeptTextBox.Text = staff.dept;
         }
 
-        //private void LoadStaffGrid(int id)
-        //{
-        //    var staffList = DA.Manager.GetStaffByStaffId(id);
-        //    if (id == 0)
-        //    {
-        //        StaffGridView.Visible = false;
-        //    }
+    
 
-        //    StaffGridView.DataSource = staffList;
-        //    StaffGridView.DataBind();
-        //}
 
-        //protected void StaffGridView_PreRender(object sender, EventArgs e)
-        //{
-        //    if (StaffGridView.Rows.Count == 0)
-        //    {
-        //        DataTable datatable = new DataTable();
-        //        //datatable.Columns.Add(new DataColumn("DateTime", typeof(DateTime)));
-        //        datatable.Rows.Add(datatable.NewRow());
-
-        //        StaffGridView.DataSource = datatable;
-        //        StaffGridView.DataBind();
-        //    }
-        //}
-        
-      
-     }
-
-  
     }
+
+
+}

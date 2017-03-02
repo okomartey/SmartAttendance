@@ -13,6 +13,24 @@ namespace AMS {
     public partial class AddSubjects {
         
         /// <summary>
+        /// StudentIdHiddenField control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField StudentIdHiddenField;
+        
+        /// <summary>
+        /// SubjectIdHiddenField control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HiddenField SubjectIdHiddenField;
+        
+        /// <summary>
         /// SubName control.
         /// </summary>
         /// <remarks>
@@ -49,13 +67,22 @@ namespace AMS {
         protected global::System.Web.UI.WebControls.TextBox SubCodeTextBox;
         
         /// <summary>
-        /// SubjectDateGrid control.
+        /// SlblMsg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView SubjectDateGrid;
+        protected global::System.Web.UI.WebControls.Label SlblMsg;
+        
+        /// <summary>
+        /// SubjectGrid control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView SubjectGrid;
         
         /// <summary>
         /// AddNewDate control.

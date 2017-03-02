@@ -30,12 +30,18 @@ namespace AMS.DataAccess
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
-    partial void Insertfaculty(faculty instance);
-    partial void Updatefaculty(faculty instance);
-    partial void Deletefaculty(faculty instance);
     partial void Insertstudent(student instance);
     partial void Updatestudent(student instance);
     partial void Deletestudent(student instance);
+    partial void Insertattendance(attendance instance);
+    partial void Updateattendance(attendance instance);
+    partial void Deleteattendance(attendance instance);
+    partial void Insertfaculty(faculty instance);
+    partial void Updatefaculty(faculty instance);
+    partial void Deletefaculty(faculty instance);
+    partial void Insertsubject(subject instance);
+    partial void Updatesubject(subject instance);
+    partial void Deletesubject(subject instance);
     #endregion
 		
 		public AttandanceContextDataContext() : 
@@ -68,11 +74,19 @@ namespace AMS.DataAccess
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<subject> subjects
+		public System.Data.Linq.Table<student> students
 		{
 			get
 			{
-				return this.GetTable<subject>();
+				return this.GetTable<student>();
+			}
+		}
+		
+		public System.Data.Linq.Table<attendance> attendances
+		{
+			get
+			{
+				return this.GetTable<attendance>();
 			}
 		}
 		
@@ -84,56 +98,375 @@ namespace AMS.DataAccess
 			}
 		}
 		
-		public System.Data.Linq.Table<student> students
+		public System.Data.Linq.Table<subject> subjects
 		{
 			get
 			{
-				return this.GetTable<student>();
+				return this.GetTable<subject>();
 			}
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.subjects")]
-	public partial class subject
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.students")]
+	public partial class student : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
-		private string _scode;
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private string _sname;
+		private int _admno;
 		
-		public subject()
+		private System.Nullable<int> _bcode;
+		
+		private string _fname;
+		
+		private string _Surname;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnadmnoChanging(int value);
+    partial void OnadmnoChanged();
+    partial void OnbcodeChanging(System.Nullable<int> value);
+    partial void OnbcodeChanged();
+    partial void OnfnameChanging(string value);
+    partial void OnfnameChanged();
+    partial void OnSurnameChanging(string value);
+    partial void OnSurnameChanged();
+    #endregion
+		
+		public student()
 		{
+			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_scode", DbType="NChar(10)")]
-		public string scode
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_admno", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int admno
 		{
 			get
 			{
-				return this._scode;
+				return this._admno;
 			}
 			set
 			{
-				if ((this._scode != value))
+				if ((this._admno != value))
 				{
-					this._scode = value;
+					this.OnadmnoChanging(value);
+					this.SendPropertyChanging();
+					this._admno = value;
+					this.SendPropertyChanged("admno");
+					this.OnadmnoChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_sname", DbType="VarChar(50)")]
-		public string sname
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_bcode", DbType="Int")]
+		public System.Nullable<int> bcode
 		{
 			get
 			{
-				return this._sname;
+				return this._bcode;
 			}
 			set
 			{
-				if ((this._sname != value))
+				if ((this._bcode != value))
 				{
-					this._sname = value;
+					this.OnbcodeChanging(value);
+					this.SendPropertyChanging();
+					this._bcode = value;
+					this.SendPropertyChanged("bcode");
+					this.OnbcodeChanged();
 				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fname", DbType="VarChar(50)")]
+		public string fname
+		{
+			get
+			{
+				return this._fname;
+			}
+			set
+			{
+				if ((this._fname != value))
+				{
+					this.OnfnameChanging(value);
+					this.SendPropertyChanging();
+					this._fname = value;
+					this.SendPropertyChanged("fname");
+					this.OnfnameChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Surname", DbType="NVarChar(50)")]
+		public string Surname
+		{
+			get
+			{
+				return this._Surname;
+			}
+			set
+			{
+				if ((this._Surname != value))
+				{
+					this.OnSurnameChanging(value);
+					this.SendPropertyChanging();
+					this._Surname = value;
+					this.SendPropertyChanged("Surname");
+					this.OnSurnameChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.attendance")]
+	public partial class attendance : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Id;
+		
+		private System.Nullable<System.DateTime> _adate;
+		
+		private System.Nullable<int> _weekno;
+		
+		private System.Nullable<int> _period;
+		
+		private string _fcode;
+		
+		private int _admno;
+		
+		private System.Nullable<char> _status;
+		
+		private string _remarks;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void OnadateChanging(System.Nullable<System.DateTime> value);
+    partial void OnadateChanged();
+    partial void OnweeknoChanging(System.Nullable<int> value);
+    partial void OnweeknoChanged();
+    partial void OnperiodChanging(System.Nullable<int> value);
+    partial void OnperiodChanged();
+    partial void OnfcodeChanging(string value);
+    partial void OnfcodeChanged();
+    partial void OnadmnoChanging(int value);
+    partial void OnadmnoChanged();
+    partial void OnstatusChanging(System.Nullable<char> value);
+    partial void OnstatusChanged();
+    partial void OnremarksChanging(string value);
+    partial void OnremarksChanged();
+    #endregion
+		
+		public attendance()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Id
+		{
+			get
+			{
+				return this._Id;
+			}
+			set
+			{
+				if ((this._Id != value))
+				{
+					this.OnIdChanging(value);
+					this.SendPropertyChanging();
+					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_adate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> adate
+		{
+			get
+			{
+				return this._adate;
+			}
+			set
+			{
+				if ((this._adate != value))
+				{
+					this.OnadateChanging(value);
+					this.SendPropertyChanging();
+					this._adate = value;
+					this.SendPropertyChanged("adate");
+					this.OnadateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_weekno", DbType="Int")]
+		public System.Nullable<int> weekno
+		{
+			get
+			{
+				return this._weekno;
+			}
+			set
+			{
+				if ((this._weekno != value))
+				{
+					this.OnweeknoChanging(value);
+					this.SendPropertyChanging();
+					this._weekno = value;
+					this.SendPropertyChanged("weekno");
+					this.OnweeknoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_period", DbType="Int")]
+		public System.Nullable<int> period
+		{
+			get
+			{
+				return this._period;
+			}
+			set
+			{
+				if ((this._period != value))
+				{
+					this.OnperiodChanging(value);
+					this.SendPropertyChanging();
+					this._period = value;
+					this.SendPropertyChanged("period");
+					this.OnperiodChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fcode", DbType="VarChar(10)")]
+		public string fcode
+		{
+			get
+			{
+				return this._fcode;
+			}
+			set
+			{
+				if ((this._fcode != value))
+				{
+					this.OnfcodeChanging(value);
+					this.SendPropertyChanging();
+					this._fcode = value;
+					this.SendPropertyChanged("fcode");
+					this.OnfcodeChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_admno", DbType="Int NOT NULL")]
+		public int admno
+		{
+			get
+			{
+				return this._admno;
+			}
+			set
+			{
+				if ((this._admno != value))
+				{
+					this.OnadmnoChanging(value);
+					this.SendPropertyChanging();
+					this._admno = value;
+					this.SendPropertyChanged("admno");
+					this.OnadmnoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_status", DbType="Char(1)")]
+		public System.Nullable<char> status
+		{
+			get
+			{
+				return this._status;
+			}
+			set
+			{
+				if ((this._status != value))
+				{
+					this.OnstatusChanging(value);
+					this.SendPropertyChanging();
+					this._status = value;
+					this.SendPropertyChanged("status");
+					this.OnstatusChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_remarks", DbType="VarChar(50)")]
+		public string remarks
+		{
+			get
+			{
+				return this._remarks;
+			}
+			set
+			{
+				if ((this._remarks != value))
+				{
+					this.OnremarksChanging(value);
+					this.SendPropertyChanging();
+					this._remarks = value;
+					this.SendPropertyChanged("remarks");
+					this.OnremarksChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
@@ -320,115 +653,91 @@ namespace AMS.DataAccess
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.students")]
-	public partial class student : INotifyPropertyChanging, INotifyPropertyChanged
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.subjects")]
+	public partial class subject : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
 		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
 		
-		private int _admno;
+		private int _Id;
 		
-		private System.Nullable<int> _bcode;
+		private string _scode;
 		
-		private string _fname;
-		
-		private string _Surname;
+		private string _sname;
 		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
     partial void OnCreated();
-    partial void OnadmnoChanging(int value);
-    partial void OnadmnoChanged();
-    partial void OnbcodeChanging(System.Nullable<int> value);
-    partial void OnbcodeChanged();
-    partial void OnfnameChanging(string value);
-    partial void OnfnameChanged();
-    partial void OnSurnameChanging(string value);
-    partial void OnSurnameChanged();
+    partial void OnIdChanging(int value);
+    partial void OnIdChanged();
+    partial void OnscodeChanging(string value);
+    partial void OnscodeChanged();
+    partial void OnsnameChanging(string value);
+    partial void OnsnameChanged();
     #endregion
 		
-		public student()
+		public subject()
 		{
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_admno", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int admno
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Id", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int Id
 		{
 			get
 			{
-				return this._admno;
+				return this._Id;
 			}
 			set
 			{
-				if ((this._admno != value))
+				if ((this._Id != value))
 				{
-					this.OnadmnoChanging(value);
+					this.OnIdChanging(value);
 					this.SendPropertyChanging();
-					this._admno = value;
-					this.SendPropertyChanged("admno");
-					this.OnadmnoChanged();
+					this._Id = value;
+					this.SendPropertyChanged("Id");
+					this.OnIdChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_bcode", DbType="Int")]
-		public System.Nullable<int> bcode
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_scode", DbType="NChar(10)")]
+		public string scode
 		{
 			get
 			{
-				return this._bcode;
+				return this._scode;
 			}
 			set
 			{
-				if ((this._bcode != value))
+				if ((this._scode != value))
 				{
-					this.OnbcodeChanging(value);
+					this.OnscodeChanging(value);
 					this.SendPropertyChanging();
-					this._bcode = value;
-					this.SendPropertyChanged("bcode");
-					this.OnbcodeChanged();
+					this._scode = value;
+					this.SendPropertyChanged("scode");
+					this.OnscodeChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_fname", DbType="VarChar(50)")]
-		public string fname
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_sname", DbType="VarChar(50)")]
+		public string sname
 		{
 			get
 			{
-				return this._fname;
+				return this._sname;
 			}
 			set
 			{
-				if ((this._fname != value))
+				if ((this._sname != value))
 				{
-					this.OnfnameChanging(value);
+					this.OnsnameChanging(value);
 					this.SendPropertyChanging();
-					this._fname = value;
-					this.SendPropertyChanged("fname");
-					this.OnfnameChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Surname", DbType="NVarChar(50)")]
-		public string Surname
-		{
-			get
-			{
-				return this._Surname;
-			}
-			set
-			{
-				if ((this._Surname != value))
-				{
-					this.OnSurnameChanging(value);
-					this.SendPropertyChanging();
-					this._Surname = value;
-					this.SendPropertyChanged("Surname");
-					this.OnSurnameChanged();
+					this._sname = value;
+					this.SendPropertyChanged("sname");
+					this.OnsnameChanged();
 				}
 			}
 		}

@@ -18,6 +18,17 @@ namespace AMS.DataAccess
             return subjects;
         }
 
+        public static List<faculty> GetAllStaff()
+        {
+            List<faculty> staff = new List<faculty>();
+            using (AttandanceContextDataContext context = new AttandanceContextDataContext())
+            {
+                staff = context.faculties.ToList();
+            }
+
+            return staff;
+        }
+
         public static faculty GetLogin(string username, string password)
         {
             using (AttandanceContextDataContext context = new AttandanceContextDataContext())
@@ -60,6 +71,22 @@ namespace AMS.DataAccess
             }
         }
 
+        public static void UpdateAttendance(attendance attendId)
+        {
+            using (AttandanceContextDataContext context = new AttandanceContextDataContext())
+            {
+                var dbStudent = context.attendances.SingleOrDefault(x => x.admno == attendId.admno);
+                if (dbStudent != null)
+                {
+                    dbStudent.admno = attendId.admno;
+                    dbStudent.period = attendId.period;
+                    dbStudent.weekno = attendId.weekno;
+
+                    context.SubmitChanges();
+                }
+            }
+        }
+
         public static void InsertStaff(faculty staff)
         {
             using (AttandanceContextDataContext context = new AttandanceContextDataContext())
@@ -69,11 +96,29 @@ namespace AMS.DataAccess
             }
         }
 
+        public static void InsertSubjects(subject subj)
+        {
+            using (AttandanceContextDataContext context = new AttandanceContextDataContext())
+            {
+                context.subjects.InsertOnSubmit(subj);
+                context.SubmitChanges();
+            }
+        }
+
         public static void InsertStudent(student student)
         {
             using (AttandanceContextDataContext context = new AttandanceContextDataContext())
             {
                 context.students.InsertOnSubmit(student);
+                context.SubmitChanges();
+            }
+        }
+
+        public static void InsertAttendance(attendance attendId)
+        {
+            using (AttandanceContextDataContext context = new AttandanceContextDataContext())
+            {
+                context.attendances.InsertOnSubmit(attendId);
                 context.SubmitChanges();
             }
         }
@@ -93,6 +138,26 @@ namespace AMS.DataAccess
             {
                 var currentStudent = context.students.SingleOrDefault(x => x.admno == id);
                 return currentStudent;
+            }
+        }
+
+        public static subject GetSubjectById(int id)
+        {
+            using (AttandanceContextDataContext context = new AttandanceContextDataContext())
+            {
+                var currentSubect = context.subjects.SingleOrDefault(x => x.Id == id);
+                return currentSubect;
+            }
+        }
+
+      
+
+        public static attendance GetAttendanceById(int id)
+        {
+            using (AttandanceContextDataContext context = new AttandanceContextDataContext())
+            {
+                var currentAttendId = context.attendances.SingleOrDefault(x => x.Id == id);
+                return currentAttendId;
             }
         }
 
