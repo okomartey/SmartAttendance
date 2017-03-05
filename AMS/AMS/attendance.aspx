@@ -1,6 +1,10 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="attendance.aspx.cs" Inherits="AMS.attendance" %>
-
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="attendance.aspx.cs" Inherits="AttandanceProject.attendance" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
+          <br />
+        <br />
+        <br />
+        <br />
+        <br />
     <h2>
         Attendance
     </h2>

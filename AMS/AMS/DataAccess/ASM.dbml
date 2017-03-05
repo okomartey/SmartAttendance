@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="attendance" Class="ASMDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=VP-GULF-DEV-170\SQLEXPRESS;Initial Catalog=attendance;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="attendanceConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.attendance" Member="attendances">
+    <Type Name="attendance">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="adate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="weekno" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="period" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="fcode" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="admno" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="status" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="remarks" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.faculty" Member="faculties">
+    <Type Name="faculty">
+      <Column Name="admno" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="fcode" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="pwd" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="fname" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="dept" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="Surname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.students" Member="students">
+    <Type Name="student">
+      <Column Name="admno" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="bcode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="fname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Surname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.subjects" Member="subjects">
+    <Type Name="subject">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="scode" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="sname" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

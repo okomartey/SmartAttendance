@@ -1,12 +1,7 @@
-﻿using AMS.DataAccess;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+﻿using System;
+using AttandanceProject.DataAccess;
 
-namespace AMS
+namespace AttandanceProject
 {
     public partial class Subjects : System.Web.UI.Page
     {

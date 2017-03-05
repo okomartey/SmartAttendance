@@ -1,19 +1,7 @@
 ﻿using System;
-using System.Data;
-using System.Data.SqlClient;
-using System.Configuration;
-using System.Collections;
-using System.Web;
-using System.Web.Configuration;
-using System.Web.Security;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Web.UI.WebControls.WebParts;
-using System.Web.UI.HtmlControls;
-using System.IO;
-using DA = AMS.DataAccess;
+using DA = AttandanceProject.DataAccess;
 
-namespace AMS
+namespace AttandanceProject
 {
     public partial class AddNewStaff : System.Web.UI.Page
     {
@@ -38,8 +26,8 @@ namespace AMS
                     {
                         StaffIdHiddenField.Value = staffId;
 
-                        LoadStaffById(id);
-                        SlblMsg.Text = " New Staff wasnt created successfully";
+                         LoadStaffById(id);
+                         SlblMsg.Text = " New Staff was created successfully";
                         //LoadDateGrid(id);
                     }
                     else

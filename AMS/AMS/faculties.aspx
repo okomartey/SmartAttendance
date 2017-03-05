@@ -1,6 +1,11 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="faculties.aspx.cs" Inherits="AMS.faculties" Title="Untitled Page" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h2>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="faculties.aspx.cs" Inherits="AttandanceProject.faculties" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+          <br />
+        <br />
+        <br />
+        <br />
+        <br />
+     <h2>
         List Of Faculties</h2>
     <p>
         <asp:DataList ID="DataList1" runat="server" DataKeyField="fcode" DataSourceID="SqlDataSource1" Width="100%">
@@ -45,4 +50,3 @@
         </asp:SqlDataSource>
         &nbsp;</p>
 </asp:Content>
-

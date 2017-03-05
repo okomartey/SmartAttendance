@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AMS {
+namespace AttandanceProject {
     
     
     public partial class Students {

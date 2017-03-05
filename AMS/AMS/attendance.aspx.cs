@@ -1,19 +1,8 @@
 ﻿using System;
-using System.Data;
-using System.Data.SqlClient;
-using System.Configuration;
-using System.Collections;
-using System.Web;
-using System.Web.Security;
-using System.Web.Configuration;
-using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Web.UI.WebControls.WebParts;
-using System.Web.UI.HtmlControls;
-using DA = AMS.DataAccess;
+using DA = AttandanceProject.DataAccess;
 
-
-namespace AMS
+namespace AttandanceProject
 {
     public partial class attendance : System.Web.UI.Page
     {
@@ -28,14 +17,14 @@ namespace AMS
                 lblPeriod.Text = Request.QueryString["period"];
                 lblSemister.Text = Request.QueryString["semister"];
 
-                //int weekno = Int32.Parse(Request.QueryString["weekno"]);
-                //if (((int)DateTime.Now.DayOfWeek) != weekno)
-                //{
-                //    Response.Write("<h4>Sorry! Today is NOT the week you selected. Please use Back button of browser and try again!</h4>");
-                //    Response.End();
-                //}
-                //else
-                //{
+                int weekno = Int32.Parse(Request.QueryString["weekno"]);
+                if (((int)DateTime.Now.DayOfWeek) != weekno)
+                {
+                    Response.Write("<h4>Sorry! Sorry you do not have a class this week, Kindly check your timetable . Please use Back button of browser and try again!</h4>");
+                    Response.End();
+                }
+                else
+                {
                     int id = 0;
                     int.TryParse(AttendId, out id);
                     if (id > 0)
@@ -44,14 +33,14 @@ namespace AMS
 
                         LoadAttendanceById(id);
                         lblMsg.Text = "Attendance stored successfully!";
-                        //LoadDateGrid(id);
+                      
                     }
-              //  }
-             
+                }
+
             }
-       
+
         }
-   
+
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
@@ -65,9 +54,9 @@ namespace AMS
             obj.weekno = Int32.Parse(lblWeekno.Text);
             obj.period = Int32.Parse(lblPeriod.Text);
             obj.fcode = Session["fcode"].ToString();
-           
 
-          
+
+
 
             RadioButton rb;
             foreach (GridViewRow r in GridView1.Rows)
@@ -94,21 +83,21 @@ namespace AMS
 
 
                 DA.Manager.InsertAttendance(obj);
-                       
+
             }
-            Response.Redirect(String.Format("attendance.aspx?AttendId={0}", obj.admno));
+            Response.Redirect(String.Format("attendance.aspx?AttendId={0}&weekno={1}&semister={2}", obj.admno,obj.weekno,obj.Id));
         }
 
-             private void LoadAttendanceById(int id)
+        private void LoadAttendanceById(int id)
         {
             var attendid = DA.Manager.GetAttendanceById(id);
-            lblToday.Text =  Convert.ToString(attendid.adate);
+            lblToday.Text = Convert.ToString(attendid.adate);
             lblWeekno.Text = Convert.ToString(attendid.weekno);
             lblPeriod.Text = Convert.ToString(attendid.period);
-           
+
         }
 
-     
-        
+
+
     }
 }

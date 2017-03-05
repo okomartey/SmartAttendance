@@ -1,6 +1,11 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="AMS.Default" Title="Untitled Page" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h2>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="AttandanceProject.Default" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+         <br />
+        <br />
+        <br />
+        <br />
+        <br />
+     <h2>
         Time Table</h2>
     <p>
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="weekno,period,bcode" DataSourceID="SqlDataSource1" Width="100%">
@@ -28,5 +33,3 @@
         </asp:SqlDataSource>
         &nbsp;</p>
 </asp:Content>
-
-

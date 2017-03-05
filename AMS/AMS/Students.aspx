@@ -1,8 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="Students.aspx.cs" Inherits="AMS.Students" %>
-
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-    <asp:GridView ID="StudentsGrid" runat="server" AllowPaging="True" AutoGenerateColumns="False"
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Students.aspx.cs" Inherits="AttandanceProject.Students" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+          <br />
+        <br />
+        <br />
+        <br />
+        <br />
+     <asp:GridView ID="StudentsGrid" runat="server" AllowPaging="True" AutoGenerateColumns="False"
         DataKeyNames="admno" DataSourceID="SqlDataSource1" EmptyDataText="Sorry! No Student's Name Matched The Given Name."
         Width="100%">
         <EmptyDataRowStyle BackColor="#FFC0C0" Font-Bold="True" />
@@ -21,5 +24,4 @@
     </asp:SqlDataSource>
 
     <asp:Button ID="AddNewStudent" runat="server" OnClick="AddNewStudent_click" Text="Add New Student" />
-
 </asp:Content>

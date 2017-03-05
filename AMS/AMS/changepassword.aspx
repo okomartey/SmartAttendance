@@ -1,8 +1,11 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="changepassword.aspx.cs" Inherits="AMS.changepassword" %>
-
-
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h2> Change Password</h2>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="changepassword.aspx.cs" Inherits="AttandanceProject.changepassword" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      <h2> Change Password</h2>
     <asp:HiddenField ID="ChangePwdIdHiddenField" runat="server" />
     <table>
         <tr>
@@ -34,4 +37,3 @@
     <br />
     <asp:Label ID="lblMsg" runat="server"></asp:Label><br />
 </asp:Content>
-

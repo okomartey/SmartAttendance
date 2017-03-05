@@ -1,6 +1,11 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="studentattendance.aspx.cs" Inherits="AMS.studentattendance" Title="Untitled Page" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h2>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="studentattendance.aspx.cs" Inherits="AttandanceProject.studentattendance" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+          <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      <h2>
         Student's Attendance</h2>
     <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False"
         DataSourceID="SqlDataSource1" PageSize="5" Width="100%">
@@ -19,4 +24,3 @@
         </SelectParameters>
     </asp:SqlDataSource>
 </asp:Content>
-

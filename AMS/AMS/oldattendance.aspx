@@ -1,5 +1,10 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="oldattendance.aspx.cs" Inherits="AMS.oldattendance" Title="Untitled Page" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="oldattendance.aspx.cs" Inherits="AttandanceProject.oldattendance" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+          <br />
+        <br />
+        <br />
+        <br />
+        <br />
     <h2>
     Old Attendance<br />
     </h2>
@@ -35,4 +40,3 @@
         </UpdateParameters>
     </asp:SqlDataSource>
 </asp:Content>
-

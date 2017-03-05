@@ -1,6 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="Staff.aspx.cs" Inherits="AMS.Staff" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Staff.aspx.cs" Inherits="AttandanceProject.Staff" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+          <br />
+        <br />
+        <br />
+        <br />
+        <br />
     <asp:GridView ID="StaffGrid" runat="server" AllowPaging="True" AutoGenerateColumns="False"
         DataKeyNames="admno" DataSourceID="SqlDataSource1" EmptyDataText="Sorry! No Staff's Name Matched The Given Name."
         Width="100%">
@@ -22,5 +26,4 @@
     </asp:SqlDataSource>
 
     <asp:Button ID="AddNewStuff" runat="server" OnClick="AddNewStudent_click" Text="Add New Staff" />
-
 </asp:Content>

@@ -1,29 +1,15 @@
 ﻿using System;
-using System.Data;
-using System.Data.SqlClient;
-using System.Configuration;
-using System.Collections;
-using System.Web;
-using System.Web.Configuration;
 using System.Web.Security;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Web.UI.WebControls.WebParts;
-using System.Web.UI.HtmlControls;
-using DA = AMS.DataAccess;
+using DA = AttandanceProject.DataAccess;
 
-
-
-
-namespace AMS
+namespace AttandanceProject
 {
     public partial class login : System.Web.UI.Page
     {
-      
         protected void btnLogin_Click(object sender, EventArgs e)
         {
 
-         
+
 
             string fname = FacultyDAL.Login(txtFcode.Text, txtPwd.Text);
             if (fname == null)
@@ -50,15 +36,10 @@ namespace AMS
                 { return null; }
 
                 else { return Isvalid.fname; }
-                        
-                }
-              
-            
+
+            }
+
+
         }
-
-
-        
-
-        
     }
 }

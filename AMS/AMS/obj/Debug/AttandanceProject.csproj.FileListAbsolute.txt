@@ -1,0 +1,157 @@
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\roslyn\csc.exe
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\roslyn\System.Collections.Immutable.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\roslyn\System.Reflection.Metadata.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\roslyn\vbc.exe
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\roslyn\VBCSCompiler.exe
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\roslyn\VBCSCompiler.exe.config
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\AttandanceProject.dll.config
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\AttandanceProject.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\AttandanceProject.pdb
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Antlr3.Runtime.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\AspNet.ScriptManager.bootstrap.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\AspNet.ScriptManager.jQuery.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\EntityFramework.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\EntityFramework.SqlServer.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.AspNet.FriendlyUrls.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.AspNet.Identity.Core.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Security.Cookies.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Security.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Security.Facebook.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Security.Google.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Security.OAuth.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Security.Twitter.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.ScriptManager.MSAjax.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.ScriptManager.WebForms.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.Web.Infrastructure.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Newtonsoft.Json.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Owin.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\System.Web.Optimization.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\System.Web.Providers.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\WebGrease.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\System.Web.Optimization.xml
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Antlr3.Runtime.pdb
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Newtonsoft.Json.xml
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.AspNet.FriendlyUrls.xml
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\EntityFramework.xml
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\EntityFramework.SqlServer.xml
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.AspNet.Identity.Core.xml
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\System.Web.Providers.xml
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.xml
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Security.xml
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Security.Facebook.xml
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Security.Cookies.xml
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Security.Google.xml
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Security.Twitter.xml
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Security.OAuth.xml
+D:\SampleProject\AttandanceProject\AttandanceProject\obj\Debug\AttandanceProject.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\obj\Debug\AttandanceProject.pdb
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\ApplicationInsights.config
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.AI.Agent.Intercept.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.AI.DependencyCollector.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.AI.Web.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.AI.WindowsServer.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.ApplicationInsights.dll
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.AI.DependencyCollector.xml
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.AI.Web.xml
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.AI.WindowsServer.xml
+D:\SampleProject\AttandanceProject\AttandanceProject\bin\Microsoft.ApplicationInsights.xml
+D:\SampleProject\AttandanceProject\AttandanceProject\obj\Debug\AttandanceProject.csprojResolveAssemblyReference.cache
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\ApplicationInsights.config
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\roslyn\csc.exe
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\roslyn\vbc.exe
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\roslyn\VBCSCompiler.exe
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\AttandanceProject.dll.config
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\AttandanceProject.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\AttandanceProject.pdb
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Antlr3.Runtime.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\EntityFramework.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\EntityFramework.SqlServer.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.AI.Web.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.ApplicationInsights.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Security.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Newtonsoft.Json.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Owin.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\System.Web.Optimization.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\System.Web.Providers.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\WebGrease.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.AI.Web.xml
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.ApplicationInsights.xml
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\System.Web.Optimization.xml
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Antlr3.Runtime.pdb
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Newtonsoft.Json.xml
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\EntityFramework.xml
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\EntityFramework.SqlServer.xml
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\System.Web.Providers.xml
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.xml
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Security.xml
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\obj\Debug\AttandanceProject.dll
+C:\Users\smartey\Documents\Visual Studio 2015\Projects\AttandanceProject\AttandanceProject\AttandanceProject\obj\Debug\AttandanceProject.pdb

@@ -1,14 +1,10 @@
-﻿using AMS.DataAccess;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Data;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+using AttandanceProject.DataAccess;
 
-namespace AMS
+namespace AttandanceProject
 {
+
     public partial class AddSubjects : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
@@ -30,7 +26,7 @@ namespace AMS
                     int.TryParse(SubjectId, out id);
                     if (id > 0)
                     {
-                        StudentIdHiddenField.Value = SubjectId;
+                        SubjectIdHiddenField.Value = SubjectId;
 
                         SubjectGrid.DataSource = Manager.GetAllSubjects();
                         SubjectGrid.DataBind();
@@ -51,7 +47,7 @@ namespace AMS
 
 
             int SubjectId = 0;
-            int.TryParse(StudentIdHiddenField.Value, out SubjectId);
+            int.TryParse(SubjectIdHiddenField.Value, out SubjectId);
 
             subject obj = new DataAccess.subject();
             obj.sname = SubNameTextBox.Text;

@@ -1,6 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="AddNewStaff.aspx.cs" Inherits="AMS.AddNewStaff" %>
-
-    <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AddNewStudent.aspx.cs" Inherits="AttandanceProject.AddNewStaff" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+          <br />
+        <br />
+        <br />
+        <br />
+        <br />
     <h2>
         Add New Staff</h2>
          <asp:HiddenField ID="StaffIdHiddenField" runat="server" />
